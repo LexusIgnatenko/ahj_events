@@ -81,7 +81,7 @@ h1, h2 {
   background-color: #f9f9f9; /* Светлый фон для ячеек */
   transition: background-color 0.3s; /* Плавный переход фона */
   margin: 1px; /* Небольшие отступы между клетками */
-  cursor: url("../src/img/icons8-thor-hammer-64.png"), auto; /* Устанавливаем курсор в виде молотка */
+  cursor: url("../img/icons8-thor-hammer-64.png"), auto; /* Устанавливаем курсор в виде молотка */
 }
 
 .cell:hover {
