@@ -1,6 +1,6 @@
 # AHJ_events
 
-![Build status][![Build status](https://ci.appveyor.com/api/projects/status/30xswvlahgnowy6a?svg=true)](https://ci.appveyor.com/project/LexusIgnatenko/ahj-events)
+![Build status](https://ci.appveyor.com/api/projects/status/30xswvlahgnowy6a?svg=true)](https://ci.appveyor.com/project/LexusIgnatenko/ahj-events)
 
 ![CI](https://github.com/LexusIgnatenko/ahj_events/actions/workflows/web.yml/badge.svg)
 
