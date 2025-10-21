@@ -19,7 +19,10 @@
 
 ### Игра с гоблинами
 
-![](./img/GracefulMiniatureBustard-small.gif)
+![](./src/img/GracefulMiniatureBustard-small.gif)
+
+Copyright gfycat.com
+
 
 #### Легенда
 
