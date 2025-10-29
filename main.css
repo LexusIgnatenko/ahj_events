@@ -1,1 +1,113 @@
-body{background-color:#2cf005;font-family:Arial,sans-serif;margin:0;padding:20px}h1,h2{color:#333}.menu,h1,h2{margin-bottom:20px;text-align:center}.menu{font-size:20px}.start{background-color:#007bff;border:none;border-radius:30px;color:#fff;font-size:inherit;padding:10px 40px;transition:background-color .3s,transform .2s}.start:focus{outline:none}.start:hover{background-color:#0056b3;cursor:pointer}.start:active{background-color:#0056b3;transform:scale(.95)}.menu span{color:#ed09b4;font-size:140%;font-weight:700}.hits{color:green}.hits,.skip{font-weight:700}.skip{color:red}.game-board{background-color:#0fbce7;border:3px solid #333;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.1);cursor:none;display:flex;flex-wrap:wrap;height:50vmin;margin:0 auto;padding:2px;position:relative;width:50vmin}.cell,.game-board{box-sizing:border-box}.cell{background-color:#f9f9f9;border:1px solid #ddd;cursor:url(74036e19b0496b98253e.png),auto;height:calc(25% - 2px);margin:1px;transition:background-color .3s;width:calc(25% - 2px)}.cell:hover{background-color:#260794}.goblin{width:100%}.hidden{display:none}.game-message{background-color:rgba(235,18,18,.9);border:2px solid #333;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.2);font-size:400%;font-weight:800;left:50%;margin-right:-50%;padding:10px 40px;position:absolute;text-align:center;top:50%;transform:translate(-50%,-50%)}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: hsl(110, 96%, 48%); 
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333; /* Темный цвет для заголовков */
+  margin-bottom: 20px;
+}
+
+.menu {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.start {
+  font-size: inherit;
+  padding: 10px 40px; /* Увеличенные отступы для кнопки */
+  border-radius: 30px;
+  background-color: #007bff; /* Цвет кнопки */
+  color: white; /* Цвет текста на кнопке */
+  border: none; /* Убрали рамку */
+  transition: background-color 0.3s, transform 0.2s; /* Плавный переход */
+}
+
+.start:focus {
+  outline: none;
+}
+
+.start:hover {
+  cursor: pointer;
+  background-color: #0056b3; /* Темнее при наведении */
+}
+
+.start:active {
+  background-color: #0056b3; /* Темнее при нажатии */
+  transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+}
+
+.menu span {
+  font-size: 140%;
+  font-weight: bold;
+  color: #ed09b4; /* Мягкий цвет для текста меню */
+}
+
+.hits {
+  color: green;
+  font-weight: bold; /* Жирный текст для выделения */
+}
+
+.skip {
+  color: red;
+  font-weight: bold; /* Жирный текст для выделения */
+}
+
+.game-board {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vmin;
+  height: 50vmin;
+  box-sizing: border-box;
+  border: 3px solid #333; /* Увеличенная рамка для четкости */
+  margin: 0 auto;
+  border-radius: 10px; /* Закругленные углы */
+  background-color: rgb(15, 188, 231); /* Белый фон для игрового поля */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  padding: 2px; /* Добавлены отступы для клеток */
+  cursor: none;
+}
+
+.cell {
+  width: calc(25% - 2px); /* Учитываем отступы между клетками */
+  height: calc(25% - 2px); /* Учитываем отступы между клетками */
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Светлая рамка для ячеек */
+  background-color: #f9f9f9; /* Светлый фон для ячеек */
+  transition: background-color 0.3s; /* Плавный переход фона */
+  margin: 1px; /* Небольшие отступы между клетками */
+  cursor: url(img/icons8-thor-hammer-64.png), auto; /* Устанавливаем курсор в виде молотка */
+}
+
+.cell:hover {
+  background-color: #260794; /* Цвет при наведении на ячейку */
+}
+
+.goblin {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-message {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(235, 18, 18, 0.9); /* Полупрозрачный фон */
+  padding: 10px 40px;
+  border: 2px solid #333; /* Темная рамка для сообщения */
+  border-radius: 10px;
+  font-size: 400%;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
