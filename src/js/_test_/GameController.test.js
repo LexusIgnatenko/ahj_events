@@ -72,10 +72,10 @@ describe("GameController", () => {
     const target = document.createElement("div");
     target.dataset.goblin = "true"; // Используем data-атрибут
 
-    gameController.onGameBoardClick(target);
-    gameController.onGameBoardClick(target); // повторное нажатие
+    gameController.onGameBoardClick(target); // Первый клик
+    gameController.onGameBoardClick(target); // Повторный клик
 
-    expect(gameController.hits).toBe(1);
+    expect(gameController.hits).toBe(1); // Остался лишь один успешный клик
   });
 
   test("должен завершать игру, когда исчерпаны попытки", async () => {
